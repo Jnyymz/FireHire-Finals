@@ -1,0 +1,432 @@
+body {
+    background-color: #faf4dc;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5168c4;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-content img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.navbar-content h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.navbar-content h3 a {
+    color: #ffd05b;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.navbar-content h3 a:hover {
+    color: #9face1;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    color: #ffd05b;
+}
+
+.username-highlight {
+    color: #9face1;
+    font-weight: bold;
+}
+
+
+.job-posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.post-card {
+    background-color: #5168c4;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.post-title, .post-company {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffd05b;
+}
+
+.post-description, .post-status {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.status-active {
+    color: #9face1;
+    font-weight: bold;
+}
+
+.status-closed {
+    color: red;
+    font-weight: bold;
+}
+
+.action-form {
+    margin-top: 10px;
+}
+
+.action-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.action-button.apply {
+    background-color: #ffd05b;
+    color: #5168c4;
+}
+
+.action-button.apply:hover {
+    background-color: #9face1;
+    color: #fff;
+}
+
+.action-button.view {
+    background-color: #9face1;
+    color: #fff;
+}
+
+.action-button.view:hover {
+    background-color: #ffd05b;
+    color: #5168c4;
+}
+
+.action-button.message {
+    background-color: #5168c4;
+    color: #ffd05b;
+}
+
+.action-button.message:hover {
+    background-color: #9face1;
+    color: #fff;
+}
+
+.action-button.closed {
+    background-color: grey;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+.tableClass {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #5168c4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.tableClass table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableClass th, .tableClass td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #9face1;
+    color: #fff;
+}
+
+.tableClass th {
+    background-color: #9face1;
+    color: #5168c4;
+    font-size: 16px;
+}
+
+.tableClass tr:hover {
+    background-color: #ffd05b;
+    color: #5168c4;
+}
+
+.searchForm {
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.searchForm input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #9face1;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.searchForm input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffd05b;
+    color: #5168c4;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.searchForm input[type="submit"]:hover {
+    background-color: #9face1;
+    color: #fff;
+}
+
+.searchForm a {
+    color: #ffd05b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.searchForm a:hover {
+    color: #9face1;
+}
+
+/*INSERT POST CSS*/
+.job-form{
+    background-color: #5168c4;
+    padding: 25px;
+    border-radius: 15px;
+    width: 450px;
+    margin: 30px auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.job-form h2{
+    text-align: center;
+    color: #ffd05b;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.job-form label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #9face1;
+}
+
+.job-form input[type="text"], .job-form select {
+    width: 95%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #5168c4;
+}
+
+.job-form input[type="text"]:focus, .job-form select:focus {
+    outline: 2px solid #9face1;
+    box-shadow: 0 0 8px rgba(159, 172, 225, 0.8);
+}
+
+.job-form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffd05b;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    color: #5168c4;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.job-form input[type="submit"]:hover {
+    background-color: #9face1;
+    color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*HR CSS*/
+.hr-form {
+    background-color: #5168c4;
+    padding: 25px;
+    border-radius: 15px;
+    width: 450px;
+    margin: 30px auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.hr-form h2{
+    text-align: center;
+    color: #ffd05b;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.hr-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #9face1;
+}
+
+.hr-form input[type="text"]{
+    width: 95%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #5168c4;
+}
+
+.hr-form input[type="text"]:focus{
+    outline: 2px solid #9face1;
+    box-shadow: 0 0 8px rgba(159, 172, 225, 0.8);
+}
+
+.hr-form input[type="password"]{
+    width: 95%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #5168c4;
+}
+
+.hr-form input[type="password"]:focus{
+    outline: 2px solid #9face1;
+    box-shadow: 0 0 8px rgba(159, 172, 225, 0.8);
+}
+
+
+.hr-form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffd05b;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    color: #5168c4;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hr-form input[type="submit"]:hover {
+    background-color: #9face1;
+    color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*-------*/
+.edit-form {
+    background-color: #5168c4;
+    padding: 25px;
+    border-radius: 15px;
+    width: 450px;
+    margin: 30px auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.edit-form h2{
+    text-align: center;
+    color: #ffd05b;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.edit-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #9face1;
+}
+
+.edit-form input[type="text"], .edit-form select{
+    width: 95%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #5168c4;
+}
+
+.edit-form input[type="text"]:focus, .edit-form select:focus{
+    outline: 2px solid #9face1;
+    box-shadow: 0 0 8px rgba(159, 172, 225, 0.8);
+}
+
+.edit-form input[type="password"]{
+    width: 95%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #5168c4;
+}
+
+.edit-form input[type="password"]:focus{
+    outline: 2px solid #9face1;
+    box-shadow: 0 0 8px rgba(159, 172, 225, 0.8);
+}
+
+
+.edit-form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffd05b;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    color: #5168c4;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.edit-form input[type="submit"]:hover {
+    background-color: #9face1;
+    color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*-------*/
+

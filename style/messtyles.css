@@ -1,0 +1,131 @@
+body {
+    background-color: #faf4dc;
+    font-family: Arial, sans-serif;
+    color: #5168c4;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5168c4;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-content img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.navbar-content h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.navbar-content h3 a {
+    color: #ffd05b;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.navbar-content h3 a:hover {
+    color: #9face1;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    color: #ffd05b;
+}
+
+.username-highlight {
+    color: #9face1;
+    font-weight: bold;
+}
+
+
+
+.page-heading {
+    text-align: center;
+    color: #5168c4;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Form Container Styling */
+.formContainer {
+    display: flex;
+    background-color: #5168c4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.formContainer form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formContainer label {
+    font-size: 16px;
+    font-weight: bold;
+    color: c;
+}
+
+.formContainer input[type="text"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 95%;
+}
+
+.formContainer input[type="submit"] {
+    background-color: #ffd05b;
+    color: #5168c4;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formContainer input[type="submit"]:hover {
+    background-color: #9face1;
+    color: #ffd05b;
+}
+
+p {
+    text-align: center;
+    color: #ffd05b;
+}
+
+p a {
+    color: #5168c4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
